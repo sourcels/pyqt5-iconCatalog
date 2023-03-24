@@ -20,7 +20,8 @@ class Window(QWidget):
     def return_icon_name(self):
         sending_button = self.sender()
         name = sending_button.objectName()
-        print(name)
+        print(f"Icon Name: {name}")
+        print(f"Icon get method: self.style().standardIcon(QStyle.{name})")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
